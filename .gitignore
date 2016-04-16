@@ -1,0 +1,14 @@
+# project specific directory
+config.php
+vendor/
+tmp/*
+propel/propel.xml
+propel/generated-conf/*
+config/settings.php
+
+
+# editor specific directory
+.DS_STORE
+.idea/*
+public/assets/profile_photos/*
+!public/assets/profile_photos/.gitkeep
