@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Home</title>
+
+    <!-- External CSS (Stylesheet) -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom CSS (Stylesheet) -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- External JS (Java Script) -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <div class="logo">
+            <img src="assets/img/logo.png">
+        </div>
+
+        <ul class="nav nav-stacked navigation">
+            <li class="nav-header">
+                <a href="#" data-toggle="collapse" data-target="#userMenu" aria-expanded="false" class="collapsed">
+                    <i class="fa fa-users"></i>
+                    <span class="nav-text"> Users<span class="nav-badge nav-badge-theme">4</span></span>
+                </a>
+                <ul class="nav nav-stacked collapse submenu" id="userMenu" aria-expanded="false" style="height: 0px;">
+                    <li class="active">
+                        <a href="#">Create</a>
+                    </li>
+                    <li>
+                        <a href="#">List</a>
+                    </li>
+                    <li>
+                        <a href="#">Import</a>
+                    </li>
+                    <li>
+                        <a href="#">Export</a>
+                    </li>
+                    <li>
+                        <a href="#">Search</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-header">
+                <a href="#" data-toggle="collapse" data-target="#clientsMenu" aria-expanded="false" class="collapsed">
+                    <i class="fa fa-male"></i>
+                    <span class="nav-text">Clients</span>
+                </a>
+                <ul class="nav nav-stacked collapse submenu" id="clientsMenu" aria-expanded="false"
+                    style="height: 0px;">
+                    <li class="active">
+                        <a href="#">Create</a>
+                    </li>
+                    <li>
+                        <a href="#">List</a>
+                    </li>
+                    <li>
+                        <a href="#">Import</a>
+                    </li>
+                    <li>
+                        <a href="#">Export</a>
+                    </li>
+                    <li>
+                        <a href="#">Search</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-header">
+                <a href="#" data-toggle="collapse" data-target="#companysMenu" aria-expanded="false" class="collapsed">
+                    <i class="fa fa fa-home"></i>
+                    <span class="nav-text">Company</span>
+                </a>
+                <ul class="nav nav-stacked collapse submenu" id="companysMenu" aria-expanded="false"
+                    style="height: 0px;">
+                    <li class="active">
+                        <a href="#">Create</a>
+                    </li>
+                    <li>
+                        <a href="#">List</a>
+                    </li>
+                    <li>
+                        <a href="#">Import</a>
+                    </li>
+                    <li>
+                        <a href="#">Export</a>
+                    </li>
+                    <li>
+                        <a href="#">Search</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-header">
+                <a href="#" data-toggle="collapse" data-target="#projectMenu" aria-expanded="false" class="collapsed">
+                    <i class="fa fa-file"></i>
+                    <span class="nav-text">Project</span>
+                </a>
+                <ul class="nav nav-stacked collapse submenu" id="projectMenu" aria-expanded="false"
+                    style="height: 0px;">
+                    <li class="active">
+                        <a href="#">Create</a>
+                    </li>
+                    <li>
+                        <a href="#">List</a>
+                    </li>
+                    <li>
+                        <a href="#">Import</a>
+                    </li>
+                    <li>
+                        <a href="#">Export</a>
+                    </li>
+                    <li>
+                        <a href="#">Search</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-header">
+                <a href="#" data-toggle="collapse" data-target="#InvoiceMenu" aria-expanded="false" class="collapsed">
+                    <i class="fa fa-dollar"></i>
+                    <span class="nav-text">Invoice<span class="nav-badge nav-badge-danger">4</span></span>
+                </a>
+                <ul class="nav nav-stacked collapse submenu" id="InvoiceMenu" aria-expanded="false"
+                    style="height: 0px;">
+                    <li class="active">
+                        <a href="#">Create</a>
+                    </li>
+                    <li>
+                        <a href="#">List</a>
+                    </li>
+                    <li>
+                        <a href="#">Import</a>
+                    </li>
+                    <li>
+                        <a href="#">Export</a>
+                    </li>
+                    <li>
+                        <a href="#">Search</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-header">
+                <a href="#" data-toggle="collapse" data-target="#TicketMenu" aria-expanded="false" class="collapsed">
+                    <i class="fa fa-bug"></i>
+                    <span class="nav-text">Support Ticket</span>
+                </a>
+                <ul class="nav nav-stacked collapse submenu" id="TicketMenu" aria-expanded="false" style="height: 0px;">
+                    <li class="active">
+                        <a href="#">Create</a>
+                    </li>
+                    <li>
+                        <a href="#">List</a>
+                    </li>
+                    <li>
+                        <a href="#">Import</a>
+                    </li>
+                    <li>
+                        <a href="#">Export</a>
+                    </li>
+                    <li>
+                        <a href="#">Search</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+
+                <button id="menu-toggle" class="navbar-toggle navbar-collapse-btn hidden-lg hidden-md hidden-sm">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <button id="menu-toggle-2" class="navbar-toggle navbar-collapse-btn hidden-xs">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="hidden-md hidden-lg navbar-brand" href="#">
+
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">Sohel Rana <span class="caret"></span></a>
+                            <ul class="dropdown-menu custom-dropdown">
+                                <li><a href="profile.html">My Account</a></li>
+                                <li><a href="index.html">Billing &amp; Cost Management</a></li>
+                                <li><a href="index.html">Security Credentials</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="profile.html">Sign Out</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">Support <span class="caret"></span></a>
+                            <ul class="dropdown-menu custom-dropdown">
+                                <li><a href="index.html">Support Center</a></li>
+                                <li><a href="index.html">Training</a></li>
+                                <li><a href="index.html">Documentation</a></li>
+                                <li><a href="index.html">Other Resources</a></li>
+                                <li><a href="index.html">Forums</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"
+                                        aria-expanded="false">Quick Navigation <span class="caret"></span></button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="/users">All (23)</a></li>
+                                    <li>
+                                        <a href="/users/index/admin">Admin(2)</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/users/index/seller">Seller(15)</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/users/index/investor">Investor(6)</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#searchUserModal">
+                                Search
+                            </button>
+                            <a href="/users/add" class="btn btn-primary btn-theme">New User</a></div>
+
+                    </div>
+                    <div class="card-body">
+                        <table class="table theme-table">
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Account Type</th>
+                                <th>Status</th>
+                                <th>Verified</th>
+                                <th>City</th>
+                                <th class="text-right">Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <a href="/users/view/2504ab6d-4454-436e-86bf-73838e9b" class="theme">Tiffany
+                                        henderson</a></td>
+                                <td>
+                                    miquellehenderson@gmail.com
+                                </td>
+                                <td>
+                                    4537652132
+                                </td>
+                                <td>
+                                    Investor
+                                </td>
+                                <td>
+                                    <label class="green text-uppercase">Active</label></td>
+                                <td>
+                                    <label class="red text-uppercase">No</label></td>
+                                <td>
+                                    lake mary
+                                </td>
+                                <td class="text-right">
+
+                                    <a href="/users/view/2504ab6d-4454-436e-86bf-73838e9b" class="green"><i
+                                            class="fa fa-gear t-icon"></i></a><a
+                                        href="/users/edit/2504ab6d-4454-436e-86bf-73838e9b" class="lblue"><i
+                                        class="fa fa-pencil t-icon"></i></a><a href="/users/delete/99" class="red"
+                                                                               onclick="if (confirm(&quot;Are you sure you want to delete this user?&quot;)) { return true; } return false;"><i
+                                        class="fa fa-times t-icon"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/users/view/3c10dec9-1477-41b5-9273-29609909" class="theme">Tiffany
+                                        Tiffany</a></td>
+                                <td>
+                                    tiffany@gmail.com
+                                </td>
+                                <td>
+                                    Henderson
+                                </td>
+                                <td>
+                                    Seller
+                                </td>
+                                <td>
+                                    <label class="green text-uppercase">Active</label></td>
+                                <td>
+                                    <label class="red text-uppercase">No</label></td>
+                                <td>
+                                    WINTER SPRINGS
+                                </td>
+                                <td class="text-right">
+
+                                    <a href="/users/view/3c10dec9-1477-41b5-9273-29609909" class="green"><i
+                                            class="fa fa-gear t-icon"></i></a><a
+                                        href="/users/edit/3c10dec9-1477-41b5-9273-29609909" class="lblue"><i
+                                        class="fa fa-pencil t-icon"></i></a><a href="/users/delete/98" class="red"
+                                                                               onclick="if (confirm(&quot;Are you sure you want to delete this user?&quot;)) { return true; } return false;"><i
+                                        class="fa fa-times t-icon"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/users/view/f9bd34f2-ac4f-4a26-95df-469fa792" class="theme">Tiffany
+                                        Tiffany</a></td>
+                                <td>
+                                    tiffany.teasley@gmail.com
+                                </td>
+                                <td>
+                                    Henderson
+                                </td>
+                                <td>
+                                    Seller
+                                </td>
+                                <td>
+                                    <label class="green text-uppercase">Active</label></td>
+                                <td>
+                                    <label class="red text-uppercase">No</label></td>
+                                <td>
+                                    WINTER SPRINGS
+                                </td>
+                                <td class="text-right">
+
+                                    <a href="/users/view/f9bd34f2-ac4f-4a26-95df-469fa792" class="green"><i
+                                            class="fa fa-gear t-icon"></i></a><a
+                                        href="/users/edit/f9bd34f2-ac4f-4a26-95df-469fa792" class="lblue"><i
+                                        class="fa fa-pencil t-icon"></i></a><a href="/users/delete/97" class="red"
+                                                                               onclick="if (confirm(&quot;Are you sure you want to delete this user?&quot;)) { return true; } return false;"><i
+                                        class="fa fa-times t-icon"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/users/view/55e93fa6-c64e-4cd4-8ca0-cbb95e41" class="theme">Tiffany
+                                        Tiffany</a></td>
+                                <td>
+                                    tiffanyhenderson885@gmail.com
+                                </td>
+                                <td>
+                                    Henderson
+                                </td>
+                                <td>
+                                    Seller
+                                </td>
+                                <td>
+                                    <label class="green text-uppercase">Active</label></td>
+                                <td>
+                                    <label class="red text-uppercase">No</label></td>
+                                <td>
+                                    WINTER SPRINGS
+                                </td>
+                                <td class="text-right">
+
+                                    <a href="/users/view/55e93fa6-c64e-4cd4-8ca0-cbb95e41" class="green"><i
+                                            class="fa fa-gear t-icon"></i></a><a
+                                        href="/users/edit/55e93fa6-c64e-4cd4-8ca0-cbb95e41" class="lblue"><i
+                                        class="fa fa-pencil t-icon"></i></a><a href="/users/delete/96" class="red"
+                                                                               onclick="if (confirm(&quot;Are you sure you want to delete this user?&quot;)) { return true; } return false;"><i
+                                        class="fa fa-times t-icon"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/users/view/88930a60-2f63-440c-8f8e-dfed26ba" class="theme">Imran Hassan
+                                        Emon</a></td>
+                                <td>
+                                    investortest21@dev.com
+                                </td>
+                                <td>
+                                    01920200336
+                                </td>
+                                <td>
+                                    Investor
+                                </td>
+                                <td>
+                                    <label class="green text-uppercase">Active</label></td>
+                                <td>
+                                    <label class="red text-uppercase">No</label></td>
+                                <td>
+                                    dhaka
+                                </td>
+                                <td class="text-right">
+
+                                    <a href="/users/view/88930a60-2f63-440c-8f8e-dfed26ba" class="green"><i
+                                            class="fa fa-gear t-icon"></i></a><a
+                                        href="/users/edit/88930a60-2f63-440c-8f8e-dfed26ba" class="lblue"><i
+                                        class="fa fa-pencil t-icon"></i></a><a href="/users/delete/95" class="red"
+                                                                               onclick="if (confirm(&quot;Are you sure you want to delete this user?&quot;)) { return true; } return false;"><i
+                                        class="fa fa-times t-icon"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/users/view/ca323f82-3342-4d82-8069-538b2fd9" class="theme">Shivanand
+                                        Ramphal</a></td>
+                                <td>
+                                    info@mitekwrwrr2support.com
+                                </td>
+                                <td>
+                                    8134811533
+                                </td>
+                                <td>
+                                    Seller
+                                </td>
+                                <td>
+                                    <label class="green text-uppercase">Active</label></td>
+                                <td>
+                                    <label class="red text-uppercase">No</label></td>
+                                <td>
+                                    Tampa
+                                </td>
+                                <td class="text-right">
+
+                                    <a href="/users/view/ca323f82-3342-4d82-8069-538b2fd9" class="green"><i
+                                            class="fa fa-gear t-icon"></i></a><a
+                                        href="/users/edit/ca323f82-3342-4d82-8069-538b2fd9" class="lblue"><i
+                                        class="fa fa-pencil t-icon"></i></a><a href="/users/delete/94" class="red"
+                                                                               onclick="if (confirm(&quot;Are you sure you want to delete this user?&quot;)) { return true; } return false;"><i
+                                        class="fa fa-times t-icon"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/users/view/6891140b-133a-4783-8d51-6a495be4" class="theme">Shivanand
+                                        Ramphal</a></td>
+                                <td>
+                                    info@miteksupport123.com
+                                </td>
+                                <td>
+                                    8134811533
+                                </td>
+                                <td>
+                                    Investor
+                                </td>
+                                <td>
+                                    <label class="green text-uppercase">Active</label></td>
+                                <td>
+                                    <label class="red text-uppercase">No</label></td>
+                                <td>
+                                    Tampa
+                                </td>
+                                <td class="text-right">
+
+                                    <a href="/users/view/6891140b-133a-4783-8d51-6a495be4" class="green"><i
+                                            class="fa fa-gear t-icon"></i></a><a
+                                        href="/users/edit/6891140b-133a-4783-8d51-6a495be4" class="lblue"><i
+                                        class="fa fa-pencil t-icon"></i></a><a href="/users/delete/93" class="red"
+                                                                               onclick="if (confirm(&quot;Are you sure you want to delete this user?&quot;)) { return true; } return false;"><i
+                                        class="fa fa-times t-icon"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/users/view/ff4864e5-ee2f-46d3-8fcc-7a366e43" class="theme">Imran Hassan
+                                        Imran Hassan</a></td>
+                                <td>
+                                    homeowner511@dev.com
+                                </td>
+                                <td>
+                                    Imran Hassan
+                                </td>
+                                <td>
+                                    Seller
+                                </td>
+                                <td>
+                                    <label class="green text-uppercase">Active</label></td>
+                                <td>
+                                    <label class="red text-uppercase">No</label></td>
+                                <td>
+                                    sd
+                                </td>
+                                <td class="text-right">
+
+                                    <a href="/users/view/ff4864e5-ee2f-46d3-8fcc-7a366e43" class="green"><i
+                                            class="fa fa-gear t-icon"></i></a><a
+                                        href="/users/edit/ff4864e5-ee2f-46d3-8fcc-7a366e43" class="lblue"><i
+                                        class="fa fa-pencil t-icon"></i></a><a href="/users/delete/92" class="red"
+                                                                               onclick="if (confirm(&quot;Are you sure you want to delete this user?&quot;)) { return true; } return false;"><i
+                                        class="fa fa-times t-icon"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/users/view/9a1e2805-e592-4316-b77f-fab30fe2" class="theme">Imran Hassan
+                                        Emon</a></td>
+                                <td>
+                                    sellertest4@dev.com
+                                </td>
+                                <td>
+                                    01920200336
+                                </td>
+                                <td>
+                                    Seller
+                                </td>
+                                <td>
+                                    <label class="green text-uppercase">Active</label></td>
+                                <td>
+                                    <label class="red text-uppercase">No</label></td>
+                                <td>
+                                    Dhaka
+                                </td>
+                                <td class="text-right">
+
+                                    <a href="/users/view/9a1e2805-e592-4316-b77f-fab30fe2" class="green"><i
+                                            class="fa fa-gear t-icon"></i></a><a
+                                        href="/users/edit/9a1e2805-e592-4316-b77f-fab30fe2" class="lblue"><i
+                                        class="fa fa-pencil t-icon"></i></a><a href="/users/delete/91" class="red"
+                                                                               onclick="if (confirm(&quot;Are you sure you want to delete this user?&quot;)) { return true; } return false;"><i
+                                        class="fa fa-times t-icon"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/users/view/c80563ac-9967-4ebc-a080-e8f215bf" class="theme">Imran Hassan
+                                        Emon</a></td>
+                                <td>
+                                    investortest4@dev.com
+                                </td>
+                                <td>
+                                    01920200336
+                                </td>
+                                <td>
+                                    Investor
+                                </td>
+                                <td>
+                                    <label class="green text-uppercase">Active</label></td>
+                                <td>
+                                    <label class="green text-uppercase">Yes</label></td>
+                                <td>
+                                    Dhaka
+                                </td>
+                                <td class="text-right">
+
+                                    <a href="/users/view/c80563ac-9967-4ebc-a080-e8f215bf" class="green"><i
+                                            class="fa fa-gear t-icon"></i></a><a
+                                        href="/users/edit/c80563ac-9967-4ebc-a080-e8f215bf" class="lblue"><i
+                                        class="fa fa-pencil t-icon"></i></a><a href="/users/delete/90" class="red"
+                                                                               onclick="if (confirm(&quot;Are you sure you want to delete this user?&quot;)) { return true; } return false;"><i
+                                        class="fa fa-times t-icon"></i></a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="paginator pull-right">
+                            <ul class="pagination">
+                                <li class="prev disabled"><a href="" onclick="return false;">«</a></li>
+                                <li class="active"><a href="">1</a></li>
+                                <li><a href="/users?page=2">2</a></li>
+                                <li><a href="/users?page=3">3</a></li>
+                                <li class="next"><a rel="next" href="/users?page=2">»</a></li>
+                            </ul>
+                            <p>1 of 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+<!-- External JS (Java Script) -->
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    $("#menu-toggle-2").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled-2");
+        $(".nav-text").toggleClass("hide");
+        $(".nav-header .fa").toggleClass("font-icon-changes");
+        $('#menu ul').hide();
+    });
+
+    function initMenu() {
+        $('#menu ul').hide();
+        $('#menu ul').children('.current').parent().show();
+        $('#menu li a').click(
+                function () {
+                    var checkElement = $(this).next();
+                    if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+                        return false;
+                    }
+                    if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+                        $('#menu ul:visible').slideUp('normal');
+                        checkElement.slideDown('normal');
+                        return false;
+                    }
+                }
+        );
+    }
+    $(document).ready(function () {
+        initMenu();
+    });
+</script>
+
+</body>
+</html>
