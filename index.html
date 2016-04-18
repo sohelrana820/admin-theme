@@ -40,10 +40,11 @@
         </div>
 
         <ul class="nav nav-stacked navigation">
-            <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#userMenu" aria-expanded="false" class="collapsed">
-                <i class="fa fa-users"></i>
-               <span class="nav-text"> Users<span class="nav-badge nav-badge-theme">4</span></span>
-            </a>
+            <li class="nav-header">
+                <a href="#" data-toggle="collapse" data-target="#userMenu" aria-expanded="false" class="collapsed">
+                    <i class="fa fa-users"></i>
+                    <span class="nav-text"> Users<span class="nav-badge nav-badge-theme">4</span></span>
+                </a>
                 <ul class="nav nav-stacked collapse submenu" id="userMenu" aria-expanded="false" style="height: 0px;">
                     <li class="active">
                         <a href="#">Create</a>
@@ -63,11 +64,11 @@
                 </ul>
             </li>
 
-            <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#clientsMenu" aria-expanded="false" class="collapsed">
-                <i class="fa fa-male"></i>
-                <span class="nav-text">Clients</span>
-
-            </a>
+            <li class="nav-header">
+                <a href="#" data-toggle="collapse" data-target="#clientsMenu" aria-expanded="false" class="collapsed">
+                    <i class="fa fa-male"></i>
+                    <span class="nav-text">Clients</span>
+                </a>
                 <ul class="nav nav-stacked collapse submenu" id="clientsMenu" aria-expanded="false" style="height: 0px;">
                     <li class="active">
                         <a href="#">Create</a>
@@ -87,10 +88,11 @@
                 </ul>
             </li>
 
-            <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#companysMenu" aria-expanded="false" class="collapsed">
-                <i class="fa fa fa-home"></i>
-                <span class="nav-text">Company</span>
-            </a>
+            <li class="nav-header">
+                <a href="#" data-toggle="collapse" data-target="#companysMenu" aria-expanded="false" class="collapsed">
+                    <i class="fa fa fa-home"></i>
+                    <span class="nav-text">Company</span>
+                </a>
                 <ul class="nav nav-stacked collapse submenu" id="companysMenu" aria-expanded="false" style="height: 0px;">
                     <li class="active">
                         <a href="#">Create</a>
@@ -110,10 +112,11 @@
                 </ul>
             </li>
 
-            <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#projectMenu" aria-expanded="false" class="collapsed">
-                <i class="fa fa-file"></i>
-                <span class="nav-text">Project</span>
-            </a>
+            <li class="nav-header">
+                <a href="#" data-toggle="collapse" data-target="#projectMenu" aria-expanded="false" class="collapsed">
+                    <i class="fa fa-file"></i>
+                    <span class="nav-text">Project</span>
+                </a>
                 <ul class="nav nav-stacked collapse submenu" id="projectMenu" aria-expanded="false" style="height: 0px;">
                     <li class="active">
                         <a href="#">Create</a>
@@ -133,10 +136,11 @@
                 </ul>
             </li>
 
-            <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#InvoiceMenu" aria-expanded="false" class="collapsed">
-                <i class="fa fa-dollar"></i>
-                <span class="nav-text">Invoice<span class="nav-badge nav-badge-danger">4</span></span>
-            </a>
+            <li class="nav-header">
+                <a href="#" data-toggle="collapse" data-target="#InvoiceMenu" aria-expanded="false" class="collapsed">
+                    <i class="fa fa-dollar"></i>
+                    <span class="nav-text">Invoice<span class="nav-badge nav-badge-danger">4</span></span>
+                </a>
                 <ul class="nav nav-stacked collapse submenu" id="InvoiceMenu" aria-expanded="false" style="height: 0px;">
                     <li class="active">
                         <a href="#">Create</a>
@@ -156,10 +160,11 @@
                 </ul>
             </li>
 
-            <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#TicketMenu" aria-expanded="false" class="collapsed">
-                <i class="fa fa-bug"></i>
-                <span class="nav-text">Support Ticket</span>
-            </a>
+            <li class="nav-header">
+                <a href="#" data-toggle="collapse" data-target="#TicketMenu" aria-expanded="false" class="collapsed">
+                    <i class="fa fa-bug"></i>
+                    <span class="nav-text">Support Ticket</span>
+                </a>
                 <ul class="nav nav-stacked collapse submenu" id="TicketMenu" aria-expanded="false" style="height: 0px;">
                     <li class="active">
                         <a href="#">Create</a>
@@ -236,7 +241,17 @@
                 </div>
             </div>
         </nav>
-        <div style="height: 500px;"></div>
+        <div>
+            <div class="container-fluid">
+                <h2 class="well">Hell</h2>
+                <h2 class="well">Hell</h2>
+                <h2 class="well">Hell</h2>
+                <h2 class="well">Hell</h2>
+                <h2 class="well">Hell</h2>
+                <h2 class="well">Hell</h2>
+                <h2 class="well">Hell</h2>
+            </div>
+        </div>
     </div>
     <!-- /#page-content-wrapper -->
 </div>
@@ -254,14 +269,13 @@
         e.preventDefault();
         $("#wrapper").toggleClass("toggled-2");
         $(".nav-text").toggleClass("hide");
-        $(".nav-header .fa").toggleClass("test");
+        $(".nav-header .fa").toggleClass("font-icon-changes");
         $('#menu ul').hide();
     });
 
     function initMenu() {
         $('#menu ul').hide();
         $('#menu ul').children('.current').parent().show();
-        //$('#menu ul:first').show();
         $('#menu li a').click(
                 function() {
                     var checkElement = $(this).next();
